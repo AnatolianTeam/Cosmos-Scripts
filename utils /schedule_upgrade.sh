@@ -27,7 +27,7 @@ for (( ; ; )); do
     height=$($BINARY status --node="tcp://127.0.0.1:$PORT_RPC" 2>&1 | jq -r .SyncInfo.latest_block_height)
   fi
   if ((height >= TARGET_BLOCK)); then
-    bash <(curl -s https://raw.githubusercontent.com/nodejumper-org/cosmos-scripts/master/${CHAIN_NAME,,}/$CHAIN_ID/upgrade/$VERSION.sh)
+    bash <(curl -s https://raw.githubusercontent.com/AnatolianTeam/Cosmos-Scripts/main/${CHAIN_NAME,,}/$CHAIN_ID/upgrade/$VERSION.sh)
     printCyan "Your node was successfully upgraded to version: $VERSION" && sleep 1
     $BINARY version --long | head
     break
