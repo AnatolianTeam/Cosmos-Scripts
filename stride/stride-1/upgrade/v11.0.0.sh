@@ -1,10 +1,8 @@
-sudo systemctl stop strided
-
-cd || return
-rm -rf stride
-git clone https://github.com/Stride-Labs/stride.git
-cd stride || return
+cd $HOME/stride
+git fetch --all
 git checkout v11.0.0
 make install
-
-sudo systemctl start strided
+strided version
+#commit: 4b5d80ac5cafb418debc8a860959d4a6c6797cfb
+#version: v11.0.0
+systemctl restart strided && journalctl -u strided -f -o cat
