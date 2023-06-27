@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source <(curl -s https://raw.githubusercontent.com/AnatolianTeam/Cosmos-Scripts/main/utils%20/common.sh)
+source <(curl -s https://raw.githubusercontent.com/AnatolianTeam/Cosmos-Scripts/main/utils/common.sh)
 
 while getopts n:i:t:v:b:c:p: flag; do
   case "${flag}" in
