@@ -1,4 +1,4 @@
-# Upgrade to v5.0.0
+# Upgrade to v0.4.0
 
 ## tmux Install
 ```shell
