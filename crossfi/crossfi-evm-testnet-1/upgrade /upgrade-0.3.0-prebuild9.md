@@ -2,8 +2,8 @@
 
 ## tmux Install
 ```shell
-sudo apt update
-sudo apt install -y tmux
+apt update
+apt install -y tmux
 ```
 
 ## Auto Update
