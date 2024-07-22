@@ -1,0 +1,17 @@
+# Upgrade to v4.0.0
+
+## tmux Install
+```shell
+apt update
+apt install -y tmux
+```
+
+## Auto Update
+```shell
+tmux new -s jackal "bash <(curl -s https://raw.githubusercontent.com/AnatolianTeam/Cosmos-Scripts/main/utils/schedule_upgrade.sh) -n jackal -i jackal-1 -t 8527000 -v v4.0.0 -b canined -c https://github.com/AnatolianTeam"
+```
+
+# CTRL+B D to exit the session
+
+### Exit tmux session
+`press CTRL+B then leave hands and then press D`
